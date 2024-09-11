@@ -16,6 +16,8 @@ source ~/.bashrc
 
 mkdir -p /etc/letsencrypt/live/$0
 
+~/.acme.sh/acme.sh --register-account -m $3
+
 ~/.acme.sh/acme.sh --set-default-ca --server zerossl
 
 # 申请证书
