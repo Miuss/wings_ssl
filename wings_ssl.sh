@@ -21,4 +21,4 @@ mkdir -p /etc/letsencrypt/live/$0
 ~/.acme.sh/acme.sh --set-default-ca --server zerossl
 
 # 申请证书
-~/.acme.sh/acme.sh --issue --dns dns_ali -d $0 --server zerossl --key-file /etc/letsencrypt/live/$0/privkey.pem --fullchain-file /etc/letsencrypt/live/$0/fullchain.pem --dnssleep 1000
+~/.acme.sh/acme.sh --issue --dns dns_ali -d $0 --server zerossl --key-file /etc/letsencrypt/live/$0/privkey.pem --fullchain-file /etc/letsencrypt/live/$0/fullchain.pem --dnssleep 5
